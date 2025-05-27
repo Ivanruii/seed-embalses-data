@@ -6,7 +6,7 @@ while (!exit) {
     name: "consoleRunner",
     type: "select",
     message: "Which console-runner do you want to run?",
-    choices: ["import-embalses", "update-embalses", "exit"].map((option) => ({
+    choices: ["seed-data", "update-last-week", "exit"].map((option) => ({
       title: option,
       value: option,
     })),

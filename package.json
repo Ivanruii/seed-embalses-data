@@ -1,0 +1,30 @@
+{
+  "name": "seed-embalses-data",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:console": "tsx --require dotenv/config src/console-runners/index.ts",
+    "start:import-data": "tsx --require dotenv/config src/console-runners/seed-data.runner.ts",
+    "start:local-db": "docker compose up -d",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^22.15.21",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "mongodb": "^6.16.0",
+    "prompts": "^2.4.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/prompts": "^2.4.9"
+  }
+}

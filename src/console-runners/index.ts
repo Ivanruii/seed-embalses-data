@@ -6,7 +6,11 @@ while (!exit) {
     name: "consoleRunner",
     type: "select",
     message: "Which console-runner do you want to run?",
-    choices: ["seed-data", "update-last-week", "exit"].map((option) => ({
+    choices: [
+      "api-arcgis-to-json-file",
+      "local-json-file-to-mongo-database",
+      "exit",
+    ].map((option) => ({
       title: option,
       value: option,
     })),

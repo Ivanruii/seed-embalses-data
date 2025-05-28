@@ -34,7 +34,7 @@ export const run = async () => {
 
     await insertEmbalses(validEmbalses);
   } catch (error) {
-    console.error("Error running import-data:", error);
+    console.error("Error running local-json-file-to-mongo-database:", error);
     process.exit(1);
   } finally {
     await disconnectFromDatabase();
